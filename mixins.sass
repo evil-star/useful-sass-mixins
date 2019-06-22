@@ -17,23 +17,18 @@ $breakpoint-lg: 1200px
 	@if $size == 'xs' 
    	@media screen and ($type + -width: $breakpoint-xs) 
       @content
-  
 	@else if $size == 'sm' 
     @media screen and ($type + -width: $breakpoint-sm) 
       @content
-    
 	@else if $size == 'md' 
     @media screen and ($type + -width: $breakpoint-md) 
       @content
-    
 	@else if $size == 'lg' 
     @media screen and ($type + -width: $breakpoint-lg) 
       @content
-
 	@else if $size == 'custom' 
 		@media screen and ($type + -width: $pixels + px) 
       @content
-
 	@else 
     @content
 
@@ -61,16 +56,12 @@ $breakpoint-lg: 1200px
 @mixin placeholder
   &.placeholder
     @content
-
   &:-moz-placeholder
     @content
-
   &::-moz-placeholder
     @content
-
   &:-ms-input-placeholder
     @content
-
   &::-webkit-input-placeholder
     @content
 
@@ -88,6 +79,3 @@ $breakpoint-lg: 1200px
       right: 0
       bottom: 0
       border: 0 
-// Использование:
-// .iframe-container
-//   +ratio(16,9)
